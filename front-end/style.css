@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+
+}
+body{
+    background-image: url(/front-end/assets/bg-science.jpg) ;
+    background-size:cover;
+}
+
+h1{
+    color: #c73e1d;
+    padding: 50px;
+    text-align: center;
+    font-size: 50px;;
+
+}
+h3{
+    color:#c59849;
+}
+p{
+    color:#FFFF
+}
+ li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 80px;
+
+}
