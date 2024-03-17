@@ -1,8 +1,7 @@
 $(document).ready(function(){
     $.ajax({
-        url: "https://127.0.0.1/news_website/News_website/back-end/read.php",
-        type: "GET",
-        dataType: "json",
+        url: "https://localhost/news_website/News_website/back-end/read.php",
+      
         success:function(data){
             
             $("#form").empty();
@@ -19,10 +18,35 @@ $(document).ready(function(){
                 console.error("Error getting news:", error);
             
     }})})
-        
-  
 
-/*const addButton= $("#add");
+
+        
+    $("#addNews").click(function() {
+        
+        const title = $("#title").val();
+        const content = $("#content").val();
+
+        $.ajax({
+            url: addApiUrl,
+            method: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({
+                title: title,
+                content: content
+            }),
+            success: function(response) {
+                //diplay data here
+                $("#title").val("");
+                $("#content").val("");
+            },
+            error: function(xhr, status, error) {
+                console.error("Error adding news:", error);
+            }
+        });
+    });
+
+
+/*const addButton= $("#addNews");
 const title = $("#title");
 const content =$("#content");
 const newsform = $("#form")

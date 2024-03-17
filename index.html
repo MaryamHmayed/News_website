@@ -8,15 +8,20 @@
 </head>
 <body>
     <h1>Science Daily</h1>
-    <button  id="add">add news</button>
+    
     <div>
-        <ul id="form" class="news-form">
+        <ul id="form" class="diplay-news-form">
             <li>
                 <h3 id="title"></h3>
                 <p id="content"></p>
             </li>
         </ul>
     </div>
+    <form id="addform">
+        <input type="text" id="title" placeholder="Enter news title">
+        <input id="content" placeholder="Enter news content" >
+        <button id="addNews" type="submit">Add News</button>
+    </form>
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
    
     <script src="/front-end/index.js"></script>

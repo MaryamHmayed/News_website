@@ -31,3 +31,22 @@ p{
     padding-left: 80px;
 
 }
+
+.addform{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+
+#content{
+    width:400px
+}
+
+button{
+    border-radius: 10px;
+    background-color: #c59849;
+    color: #FFFF;
+    width: 100px;
+    height: 30px;
+}
